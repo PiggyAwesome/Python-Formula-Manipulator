@@ -10,10 +10,13 @@ time = symbols("t")
 work = symbols("W")
 displacement = symbols("s")
 power = symbols("P")
+angle_of_force_to_direction_of_movement = symbols("θ")
 
 """
 F = ma
-W = Fs
+
+W = Fscos(θ)
+
 P = W/∆t
 """
 
@@ -32,6 +35,7 @@ variables = {
     "s": displacement,
     "t": time,
     "P": power,
+    "θ": angle_of_force_to_direction_of_movement
 }
 
 print("""
@@ -42,6 +46,8 @@ print("""
       (s) Displacement
       (t) Time
       (P) Power
+      (θ) Angle of force to direction of movement
+
 ...
 """)
 
